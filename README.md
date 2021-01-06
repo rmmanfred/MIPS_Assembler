@@ -22,7 +22,7 @@
 
 ## Limitations and Errors
 - Limited to instructions and data specified above
-- Known errors when encountering ...
+- Known errors when encountering .asciiz data values (hope to fix in the future)
 
 ## Usage and Testing
 - Demo to come
