@@ -1,0 +1,174 @@
+Executing grade.sh...
+
+Creating build subdirectory
+
+Extracting student's files to the build directory:
+ASMParser.c
+BinFunc.c
+c03driver.c
+DataLoc.c
+ParseResult.c
+RegNum.c
+ASMParser.h
+BinFunc.h
+DataLoc.h
+ParseResult.h
+RegNum.h
+makefile
+vlog.txt
+
+Missing pledge file
+Invoking:  make assembler
+gcc -std=c11 -Wall -W -O0 -ggdb3 -o assemble ASMParser.c ParseResult.c BinFunc.c RegNum.c c03driver.c DataLoc.c
+In file included from ParseResult.h:7:0,
+                 from ASMParser.h:6,
+                 from ASMParser.c:22:
+BinFunc.h:49:12: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+ const bool r_Find(char* name, BinFunc* elem);
+            ^
+BinFunc.h:57:12: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+ const bool i_Find(char* name, BinFunc* elem);
+            ^
+BinFunc.h:65:12: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+ const bool spec_Find(char* name, BinFunc* elem);
+            ^
+ASMParser.c: In function ‘parseASM’:
+ASMParser.c:141:2: warning: implicit declaration of function ‘pseudo_Find’ [-Wimplicit-function-declaration]
+  else if(pseudo_Find(obj->Mnemonic, plem))
+  ^
+ASMParser.c: In function ‘parseSpecial’:
+ASMParser.c:212:7: warning: unused variable ‘n’ [-Wunused-variable]
+   int n = fillWord(st, temp, offset, FLAG);
+       ^
+ASMParser.c: In function ‘parseI’:
+ASMParser.c:467:21: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int x = n; x < strlen(st); x++)
+                     ^
+ASMParser.c: In function ‘fillField’:
+ASMParser.c:653:17: warning: initialization discards ‘const’ qualifier from pointer target type [enabled by default]
+   RegNum* reg = Find(fill);
+                 ^
+In file included from ParseResult.h:7:0,
+                 from ParseResult.c:22:
+BinFunc.h:49:12: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+ const bool r_Find(char* name, BinFunc* elem);
+            ^
+BinFunc.h:57:12: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+ const bool i_Find(char* name, BinFunc* elem);
+            ^
+BinFunc.h:65:12: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+ const bool spec_Find(char* name, BinFunc* elem);
+            ^
+ParseResult.c: In function ‘processFiles’:
+ParseResult.c:235:5: warning: passing argument 2 of ‘strchr’ makes integer from pointer without a cast [enabled by default]
+     if (strchr(key, "blt") != NULL)
+     ^
+In file included from RegNum.h:26:0,
+                 from ParseResult.h:5,
+                 from ParseResult.c:22:
+/usr/include/string.h:232:14: note: expected ‘int’ but argument is of type ‘char *’
+ extern char *strchr (const char *__s, int __c)
+              ^
+ParseResult.c:302:6: warning: implicit declaration of function ‘parseASM’ [-Wimplicit-function-declaration]
+      ParseResult* elem = parseASM(ky, next);
+      ^
+ParseResult.c:302:26: warning: initialization makes pointer from integer without a cast [enabled by default]
+      ParseResult* elem = parseASM(ky, next);
+                          ^
+ParseResult.c:318:25: warning: initialization makes pointer from integer without a cast [enabled by default]
+    ParseResult* extra = parseASM(next, no);
+                         ^
+ParseResult.c: In function ‘processSymbols’:
+ParseResult.c:417:5: warning: passing argument 2 of ‘strchr’ makes integer from pointer without a cast [enabled by default]
+     if (strchr(key, "blt") != NULL)
+     ^
+In file included from RegNum.h:26:0,
+                 from ParseResult.h:5,
+                 from ParseResult.c:22:
+/usr/include/string.h:232:14: note: expected ‘int’ but argument is of type ‘char *’
+ extern char *strchr (const char *__s, int __c)
+              ^
+ParseResult.c:392:6: warning: variable ‘text’ set but not used [-Wunused-but-set-variable]
+  int text = 0;
+      ^
+ParseResult.c: In function ‘filterComment’:
+ParseResult.c:473:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i = 0; i < strlen(src); i++)
+                    ^
+ParseResult.c: In function ‘printData’:
+ParseResult.c:547:11: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  while (i < strlen(str))
+           ^
+ParseResult.c: At top level:
+ParseResult.c:693:1: warning: "/*" within comment [-Wcomment]
+ /**
+ ^
+ParseResult.c: In function ‘dataPosition’:
+ParseResult.c:854:11: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  while (i < strlen(str))
+           ^
+In file included from BinFunc.c:22:0:
+BinFunc.h:49:12: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+ const bool r_Find(char* name, BinFunc* elem);
+            ^
+BinFunc.h:57:12: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+ const bool i_Find(char* name, BinFunc* elem);
+            ^
+BinFunc.h:65:12: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+ const bool spec_Find(char* name, BinFunc* elem);
+            ^
+BinFunc.c:63:12: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+ const bool r_Find(char* name, BinFunc* elem)
+            ^
+BinFunc.c: In function ‘r_Find’:
+BinFunc.c:65:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i = 0; i < (sizeof(r)/sizeof(BinFunc)); i++)
+                    ^
+BinFunc.c: At top level:
+BinFunc.c:82:12: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+ const bool i_Find(char* name, BinFunc* elem)
+            ^
+BinFunc.c: In function ‘i_Find’:
+BinFunc.c:84:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int n = 0; n < (sizeof(i)/sizeof(BinFunc)); n++)
+                    ^
+BinFunc.c: At top level:
+BinFunc.c:102:12: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+ const bool spec_Find(char* name, BinFunc* elem)
+            ^
+BinFunc.c: In function ‘spec_Find’:
+BinFunc.c:104:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i = 0; i < (sizeof(spec)/sizeof(BinFunc)); i++)
+                    ^
+BinFunc.c: At top level:
+BinFunc.c:121:12: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+ const bool pseudo_Find(char* name, BinFunc* elem)
+            ^
+BinFunc.c: In function ‘pseudo_Find’:
+BinFunc.c:123:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i = 0; i < (sizeof(pseudo)/sizeof(BinFunc)); i++)
+                    ^
+RegNum.c: In function ‘Find’:
+RegNum.c:46:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i = 0; i < (sizeof(reg)/sizeof(RegNum)); i++)
+                    ^
+RegNum.c:53:2: warning: initialization makes integer from pointer without a cast [enabled by default]
+  RegNum null = {NULL, NULL, NULL};
+  ^
+RegNum.c:53:2: warning: (near initialization for ‘null.reg’) [enabled by default]
+RegNum.c:54:2: warning: function returns address of local variable [-Wreturn-local-addr]
+  return &null;
+  ^
+In file included from ParseResult.h:7:0,
+                 from c03driver.c:22:
+BinFunc.h:49:12: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+ const bool r_Find(char* name, BinFunc* elem);
+            ^
+BinFunc.h:57:12: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+ const bool i_Find(char* name, BinFunc* elem);
+            ^
+BinFunc.h:65:12: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+ const bool spec_Find(char* name, BinFunc* elem);
+            ^
+
+============================================================
