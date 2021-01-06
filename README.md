@@ -13,7 +13,7 @@
     - la rt, label: load address label to register rt
     - li rt, imm16: load 16 bit immediate value to register rt
     - lw rt, label: load word at address label to register rt
-- more on the details of this assignment can be seen in the ... file
+- more on the details of this assignment can be seen [here](MIPSAssembler.pdf)
 
 ## Execution
 - Used static lookup tables to provide conversions from instruction to binary representation as well as symbolic register name to binary and integer representation
