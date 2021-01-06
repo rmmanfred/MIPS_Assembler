@@ -1,5 +1,5 @@
 # VT Assembler Project
-## **Ross Manfred**
+**Ross Manfred**
 
 ## Purpose
 - Create an assembler converting .asm assembly files into a binary object (.o) file
