@@ -28,6 +28,7 @@
 ## Usage and Testing
 - Demo to come
 - Code located in [final/dev2 folder](c03Grader/final/dev2)
+- Comparison files located in [final folder](c03Grader/final)
 - "assemble <input .asm file> <output file>" or "assemble <input> <output> -symbols" to produce symbol table
 - provided "compare" executable can be used to compare output file from expected values
 - provided "symcompare" compares symbol table files when using the -symbol switch
