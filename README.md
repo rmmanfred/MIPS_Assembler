@@ -2,7 +2,7 @@
 
 ## Purpose
 - Create an assembler converting .asm assembly files into a binary object (.o) file
-- Support for following instructions as well as ...:
+- Support for following instructions as well as .word and .asciiz used in the .data section:
   - load and store instructions lw, sw, lui
   - arithmetic instructions add, addi, addu, addiu, mul, mult, sub
   - logic instructions nop, nor, sll, slt, slti, sra, srav
@@ -13,8 +13,7 @@
     - la rt, label: load address label to register rt
     - li rt, imm16: load 16 bit immediate value to register rt
     - lw rt, label: load word at address label to register rt
-  
-- Expected formatted instructions as ...
+- more on the details of this assignment can be seen in the ... file
 
 ## Execution
 - Used static lookup tables to provide conversions from instruction to binary representation as well as symbolic register name to binary and integer representation
@@ -22,7 +21,7 @@
 - ...
 
 ## Limitations and Errors
-- Limited to ... instructions
+- Limited to instructions and data specified above
 - Known errors when encountering ...
 
 ## Usage and Testing
