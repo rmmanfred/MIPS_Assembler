@@ -2,7 +2,14 @@
 
 ## Purpose
 - Create an assembler converting .asm assembly files into a binary object (.o) file
-- Support for ... commands as well as ...
+- Support for following instructions as well as ...:
+  - load and store instructions lw, sw, lui
+  - arithmetic instructions add, addi, addu, addiu, mul, mult, sub
+  - logic instructions nop, nor, sll, slt, slti, sra, srav
+  - control-of-flow instructions beq, blez, bgtz, bne, j, syscall
+  - pseudo code instructions:
+    - move rd, rs
+  
 - Expected formatted instructions as ...
 
 ## Execution
@@ -16,3 +23,6 @@
 
 ## Usage and Testing
 - Demo to come
+- "assemble <input .asm file> <output file>" or "assemble <input> <output> -symbols" to produce symbol table
+- provided "compare" executable can be used to compare output file from expected values
+- Results of testing basic files can be found in grader folder
