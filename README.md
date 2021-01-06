@@ -8,7 +8,11 @@
   - logic instructions nop, nor, sll, slt, slti, sra, srav
   - control-of-flow instructions beq, blez, bgtz, bne, j, syscall
   - pseudo code instructions:
-    - move rd, rs
+    - move rd, rs: copy register rs to rd
+    - blt rs, rt, offset: conditional branch if rs < rt
+    - la rt, label: load address label to register rt
+    - li rt, imm16: load 16 bit immediate value to register rt
+    - lw rt, label: load word at address label to register rt
   
 - Expected formatted instructions as ...
 
